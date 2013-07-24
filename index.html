@@ -17,7 +17,7 @@
         $('#main_content').headsmart()
       })
     </script>
-    <title>Css-guidelines by chadluo</title>
+    <title>CSS-Guidelines by chadluo</title>
   </head>
 
   <body>
@@ -27,8 +27,8 @@
       <header>
         <span class="ribbon-outer">
           <span class="ribbon-inner">
-            <h1>Css-guidelines</h1>
-            <h2>编写高可维护性 CSS 的高级指导</h2>
+            <h1>CSS-Guidelines</h1>
+            <h2>编写易于管理及维护的 CSS 的指导纲要</h2>
           </span>
           <span class="left-tail"></span>
           <span class="right-tail"></span>
@@ -47,7 +47,7 @@
 
       <section id="main_content">
         <h1>
-<a name="-css-" class="anchor" href="#-css-"><span class="octicon octicon-link"></span></a>通用 CSS 笔记、建议与指导</h1>
+<a name="%E9%80%9A%E7%94%A8-css-%E7%AC%94%E8%AE%B0%E5%BB%BA%E8%AE%AE%E4%B8%8E%E6%8C%87%E5%AF%BC" class="anchor" href="#%E9%80%9A%E7%94%A8-css-%E7%AC%94%E8%AE%B0%E5%BB%BA%E8%AE%AE%E4%B8%8E%E6%8C%87%E5%AF%BC"><span class="octicon octicon-link"></span></a>通用 CSS 笔记、建议与指导</h1>
 
 <hr><p>在参与规模庞大、历时漫长且人手众多的项目时，所有开发者遵守如下规则极为重要：</p>
 
@@ -60,7 +60,7 @@
 <p>本文档第一部分将探讨语法、格式以及 CSS 分析；第二部分将从方法论、思维框架以及编写与规划 CSS 的态度入手。</p>
 
 <h2>
-<a name="" class="anchor" href="#"><span class="octicon octicon-link"></span></a>目录</h2>
+<a name="%E7%9B%AE%E5%BD%95" class="anchor" href="#%E7%9B%AE%E5%BD%95"><span class="octicon octicon-link"></span></a>目录</h2>
 
 <ul>
 <li>CSS 文档分析
@@ -118,24 +118,24 @@
 </ul><p>注：ID 不能包含汉字，所以在 Github Markdown 中暂时无法实现跳转。</p>
 
 <hr><h2>
-<a name="css-" class="anchor" href="#css-"><span class="octicon octicon-link"></span></a>CSS 文档分析</h2>
+<a name="css-%E6%96%87%E6%A1%A3%E5%88%86%E6%9E%90" class="anchor" href="#css-%E6%96%87%E6%A1%A3%E5%88%86%E6%9E%90"><span class="octicon octicon-link"></span></a>CSS 文档分析</h2>
 
 <p>无论编写什么文档，我们都应当尽力维持统一的风格，包括统一的注释、统一的语法与统一的命名规范。</p>
 
 <h3>
-<a name="-1" class="anchor" href="#-1"><span class="octicon octicon-link"></span></a>总则</h3>
+<a name="%E6%80%BB%E5%88%99" class="anchor" href="#%E6%80%BB%E5%88%99"><span class="octicon octicon-link"></span></a>总则</h3>
 
 <p>尽量将行宽控制在 80 字节以下。渐变（gradient）相关的语法以及注释中的 URL 等可以算作例外，毕竟这部分我们也无能为力。</p>
 
 <p>我倾向于用 4 个空格而非 Tab 缩进，并且将声明拆分成多行。</p>
 
 <h3>
-<a name="-2" class="anchor" href="#-2"><span class="octicon octicon-link"></span></a>单一文件与多文件</h3>
+<a name="%E5%8D%95%E4%B8%80%E6%96%87%E4%BB%B6%E4%B8%8E%E5%A4%9A%E6%96%87%E4%BB%B6" class="anchor" href="#%E5%8D%95%E4%B8%80%E6%96%87%E4%BB%B6%E4%B8%8E%E5%A4%9A%E6%96%87%E4%BB%B6"><span class="octicon octicon-link"></span></a>单一文件与多文件</h3>
 
 <p>有些人喜欢将样式写成一个大文件，这并不赖，而且如果你按照下文的规则来编写的话也不会遇到什么问题。我在迁移至 Sass 之后，开始将样式拆分成众多小文件。这也不赖。无论你采用什么方式，下文中的规则都将适用。这两种写法仅仅在目录以及区块标题上有所差异。</p>
 
 <h3>
-<a name="-3" class="anchor" href="#-3"><span class="octicon octicon-link"></span></a>目录</h3>
+<a name="%E7%9B%AE%E5%BD%95-1" class="anchor" href="#%E7%9B%AE%E5%BD%95-1"><span class="octicon octicon-link"></span></a>目录</h3>
 
 <p>在 CSS 的开头，我会写一份目录，例如：</p>
 
@@ -154,7 +154,7 @@
 <p>如果你在维护一份规模较大的单文件 CSS，对应的区块将也在同一文件中。如果你是在编写一组小文件，那么目录中的每一项应当对应相应的 <a href="https://github.com/include" class="user-mention">@include</a> 语句。</p>
 
 <h3>
-<a name="-4" class="anchor" href="#-4"><span class="octicon octicon-link"></span></a>区块标题</h3>
+<a name="%E5%8C%BA%E5%9D%97%E6%A0%87%E9%A2%98" class="anchor" href="#%E5%8C%BA%E5%9D%97%E6%A0%87%E9%A2%98"><span class="octicon octicon-link"></span></a>区块标题</h3>
 
 <p>目录应当对应区块的标题。请看如下示例：</p>
 
@@ -188,7 +188,7 @@ styles]
 <p>如果你在维护多份、以 <a href="https://github.com/include" class="user-mention">@include</a> 连接的 CSS 的话，在每份文件头加上标题即可，不必这样空行。</p>
 
 <h2>
-<a name="-5" class="anchor" href="#-5"><span class="octicon octicon-link"></span></a>顺序</h2>
+<a name="%E9%A1%BA%E5%BA%8F" class="anchor" href="#%E9%A1%BA%E5%BA%8F"><span class="octicon octicon-link"></span></a>顺序</h2>
 
 <p>尽量按照特定顺序编写规则，这将确保你充分发挥 CSS 缩写中第一个 <i>C</i> 的意义：cascade，层叠。</p>
 
@@ -210,7 +210,7 @@ styles]
 <p>关于这方面的更多信息，强烈推荐 Jonathan Snook 的 <a href="http://smacss.com">SMACSS</a>。</p>
 
 <h2>
-<a name="css--1" class="anchor" href="#css--1"><span class="octicon octicon-link"></span></a>CSS 规则集分析</h2>
+<a name="css-%E8%A7%84%E5%88%99%E9%9B%86%E5%88%86%E6%9E%90" class="anchor" href="#css-%E8%A7%84%E5%88%99%E9%9B%86%E5%88%86%E6%9E%90"><span class="octicon octicon-link"></span></a>CSS 规则集分析</h2>
 
 <pre><code>[selector]{
     [property]:[value];
@@ -278,7 +278,7 @@ styles]
 <p>在这个例子（来自<a href="https://github.com/csswizardry/inuit.css/blob/master/inuit.css/partials/base/_tables.scss#L88">inuit.css’s table grid system</a>）中，将 CSS 放在一行内可以使得代码更紧凑。</p>
 
 <h2>
-<a name="-6" class="anchor" href="#-6"><span class="octicon octicon-link"></span></a>命名规范</h2>
+<a name="%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83" class="anchor" href="#%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83"><span class="octicon octicon-link"></span></a>命名规范</h2>
 
 <p>一般情况下我都是以连字符（-）连接 class 的名字（例如 <code>.foo-bar</code> 而非 <code>.foo_bar</code> 或 <code>.fooBar</code>），不过在某些特定的时候我会用 BEM（Block, Element, Modifier）命名法。</p>
 
@@ -320,7 +320,7 @@ styles]
 <p>无论你是否使用 BEM 命名法，你都应当确保 class 命名得当，力保一字不多、一字不少；将元素命名抽象化以提高复用性（例如 <code>.ui-list</code>，<code>.media</code>）。由此延伸出去的元素命名则要尽量精准（例如 <code>.user-avatar-link</code>）。不用担心 class 名的数量或长度，因为写得好的代码 gzip 也能有效压缩。</p>
 
 <h3>
-<a name="html--class" class="anchor" href="#html--class"><span class="octicon octicon-link"></span></a>HTML 中的 class</h3>
+<a name="html-%E4%B8%AD%E7%9A%84-class" class="anchor" href="#html-%E4%B8%AD%E7%9A%84-class"><span class="octicon octicon-link"></span></a>HTML 中的 class</h3>
 
 <p>为了确保易读性，在 HTML 标记中用两个空格隔开 class 名，例如：</p>
 
@@ -330,7 +330,7 @@ styles]
 <p>增加的空格应当可以使得在使用多个 class 时更易阅读与定位。</p>
 
 <h3>
-<a name="js-" class="anchor" href="#js-"><span class="octicon octicon-link"></span></a>JS 钩子</h3>
+<a name="js-%E9%92%A9%E5%AD%90" class="anchor" href="#js-%E9%92%A9%E5%AD%90"><span class="octicon octicon-link"></span></a>JS 钩子</h3>
 
 <p><strong>千万不要把 CSS 样式用作 JavaScript 钩子。</strong>把 JS 行为与样式混在一起将无法对其分别处理。</p>
 
@@ -357,7 +357,7 @@ styles]
 <p>所以为了统一性，把所有的 class 与变量都以你参与的项目的惯用拼法命名即可。</p>
 
 <h2>
-<a name="-7" class="anchor" href="#-7"><span class="octicon octicon-link"></span></a>注释</h2>
+<a name="%E6%B3%A8%E9%87%8A" class="anchor" href="#%E6%B3%A8%E9%87%8A"><span class="octicon octicon-link"></span></a>注释</h2>
 
 <p>我使用行宽不超过 80 字节的块状注释：</p>
 
@@ -396,7 +396,7 @@ styles]
 <p>在注释中应当尽量详细描述代码，因为对你来说清晰易懂的内容对其他人可能并非如此。每写一部分代码就要专门写注释以详解。</p>
 
 <h3>
-<a name="-8" class="anchor" href="#-8"><span class="octicon octicon-link"></span></a>注释的拓展用法</h3>
+<a name="%E6%B3%A8%E9%87%8A%E7%9A%84%E6%8B%93%E5%B1%95%E7%94%A8%E6%B3%95" class="anchor" href="#%E6%B3%A8%E9%87%8A%E7%9A%84%E6%8B%93%E5%B1%95%E7%94%A8%E6%B3%95"><span class="octicon octicon-link"></span></a>注释的拓展用法</h3>
 
 <p>注释有许多很先进的用法，例如：</p>
 
@@ -405,7 +405,7 @@ styles]
 <li>代码标签</li>
 <li>继承标记</li>
 </ul><h4>
-<a name="-9" class="anchor" href="#-9"><span class="octicon octicon-link"></span></a>准修饰选择器</h4>
+<a name="%E5%87%86%E4%BF%AE%E9%A5%B0%E9%80%89%E6%8B%A9%E5%99%A8" class="anchor" href="#%E5%87%86%E4%BF%AE%E9%A5%B0%E9%80%89%E6%8B%A9%E5%99%A8"><span class="octicon octicon-link"></span></a>准修饰选择器</h4>
 
 <p>你应当避免过分修饰选择器，例如如果你能写 <code>.nav{}</code> 就尽量不要写 <code>ul.nav{}</code>。过分修饰选择器将影响性能，影响 class 复用性，增加选择器私有度。这些都是你应当竭力避免的。</p>
 
@@ -428,7 +428,7 @@ styles]
 <p>这样我们就能在不影响代码私有度的前提下获知 class 作用范围。</p>
 
 <h4>
-<a name="-10" class="anchor" href="#-10"><span class="octicon octicon-link"></span></a>代码标签</h4>
+<a name="%E4%BB%A3%E7%A0%81%E6%A0%87%E7%AD%BE" class="anchor" href="#%E4%BB%A3%E7%A0%81%E6%A0%87%E7%AD%BE"><span class="octicon octicon-link"></span></a>代码标签</h4>
 
 <p>如果你写了一个新规则的话，可以在它上面加上标签，例如：</p>
 
@@ -446,7 +446,7 @@ styles]
 <p>这些标签可以使得其他开发者快速找到相关代码。如果一个开发者需要查找和列表相关的部分，他只要搜索 <code>^lists</code> 就能快速定位到 <code>.nav</code>，<code>.matrix</code> 以及其它相关部分。</p>
 
 <h4>
-<a name="-11" class="anchor" href="#-11"><span class="octicon octicon-link"></span></a>继承标记</h4>
+<a name="%E7%BB%A7%E6%89%BF%E6%A0%87%E8%AE%B0" class="anchor" href="#%E7%BB%A7%E6%89%BF%E6%A0%87%E8%AE%B0"><span class="octicon octicon-link"></span></a>继承标记</h4>
 
 <p>将面向对象的思路用于 CSS 编写的话，你经常能找到两部分 CSS 密切相关（其一为基础，其一为拓展）却分列两处。我们可以用继承标记来在原元素和继承元素之间建立紧密联系。这些在注释中的写法如下：</p>
 
@@ -469,19 +469,19 @@ styles]
 <p>这样一来我们就能在两块相隔很远的代码间建立紧密联系。</p>
 
 <hr><h2>
-<a name="-css" class="anchor" href="#-css"><span class="octicon octicon-link"></span></a>编写 CSS</h2>
+<a name="%E7%BC%96%E5%86%99-css" class="anchor" href="#%E7%BC%96%E5%86%99-css"><span class="octicon octicon-link"></span></a>编写 CSS</h2>
 
 <p>之前的章节主要探讨如何规划 CSS，这些都是易于量化的规则。本章将探讨更理论化的东西，也将探讨我们的态度与方法。</p>
 
 <h2>
-<a name="-12" class="anchor" href="#-12"><span class="octicon octicon-link"></span></a>编写新组件</h2>
+<a name="%E7%BC%96%E5%86%99%E6%96%B0%E7%BB%84%E4%BB%B6" class="anchor" href="#%E7%BC%96%E5%86%99%E6%96%B0%E7%BB%84%E4%BB%B6"><span class="octicon octicon-link"></span></a>编写新组件</h2>
 
 <p>编写新组件时，要在着手处理 CSS <strong>之前</strong> 写好 HTML 部分。这可以令你准确判断哪些 CSS 属性可以继承，避免重复浪费。</p>
 
 <p>先写标记的话，你就可以关注数据、内容与语义，在这之后再添加需要的 class 和 CSS 样式。</p>
 
 <h2>
-<a name="-css-1" class="anchor" href="#-css-1"><span class="octicon octicon-link"></span></a>面向对象 CSS</h2>
+<a name="%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1-css" class="anchor" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1-css"><span class="octicon octicon-link"></span></a>面向对象 CSS</h2>
 
 <p>我以面向对象 CSS 的方式写代码。我把组件分成结构（对象）与外观（拓展）。正如以下分析（注意这个只是笔记而非例子）：</p>
 
@@ -499,7 +499,7 @@ styles]
 <p>当你要编写一个新组件时，将其拆分成结构和外观。编写结构部分时用最通用 class 以保证复用性，编写外观时用更具体的 class 来添加设计方法。</p>
 
 <h2>
-<a name="-13" class="anchor" href="#-13"><span class="octicon octicon-link"></span></a>布局</h2>
+<a name="%E5%B8%83%E5%B1%80" class="anchor" href="#%E5%B8%83%E5%B1%80"><span class="octicon octicon-link"></span></a>布局</h2>
 
 <p>所有组件都不要声明宽度，而由其亲元素或格栅系统来决定。</p>
 
@@ -510,7 +510,7 @@ styles]
 <p>你在格栅系统上不应当添加任何样式，他们仅仅是为布局而用。在格栅系统内部再添加样式。在格栅系统中任何情况下都不要添加盒模型相关属性。</p>
 
 <h2>
-<a name="ui-" class="anchor" href="#ui-"><span class="octicon octicon-link"></span></a>UI 尺寸</h2>
+<a name="ui-%E5%B0%BA%E5%AF%B8" class="anchor" href="#ui-%E5%B0%BA%E5%AF%B8"><span class="octicon octicon-link"></span></a>UI 尺寸</h2>
 
 <p>我用很多方法设定 UI 尺寸，包括百分比，<code>px</code>，<code>em</code>，<code>rem</code> 以及干脆什么都不用。</p>
 
@@ -527,12 +527,12 @@ styles]
 <p>我只在已经固定尺寸的元素上使用 px，包括图片以及尺寸已经用 px 固定的 CSS Sprite。</p>
 
 <h3>
-<a name="-14" class="anchor" href="#-14"><span class="octicon octicon-link"></span></a>字号</h3>
+<a name="%E5%AD%97%E5%8F%B7" class="anchor" href="#%E5%AD%97%E5%8F%B7"><span class="octicon octicon-link"></span></a>字号</h3>
 
 <p>我会定义一些与格栅系统原理类似的 class 来声明字号。这些 class 可以用于双重标题分级，关于这点请阅读 <a href="http://csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css">Pragmatic, practical font-sizing in CSS</a>。</p>
 
 <h2>
-<a name="-15" class="anchor" href="#-15"><span class="octicon octicon-link"></span></a>简写</h2>
+<a name="%E7%AE%80%E5%86%99" class="anchor" href="#%E7%AE%80%E5%86%99"><span class="octicon octicon-link"></span></a>简写</h2>
 
 <p><strong>CSS 简写应当谨慎使用。</strong></p>
 
@@ -556,7 +556,7 @@ styles]
 <p>Class 的优势在于复用性，而且私有度也并不高。私有度非常容易导致问题，所以将其降低就尤为重要。ID 的私有度是 class 的 <strong>255</strong> 倍，所以在 CSS 中坚决不要使用。</p>
 
 <h2>
-<a name="-16" class="anchor" href="#-16"><span class="octicon octicon-link"></span></a>选择器</h2>
+<a name="%E9%80%89%E6%8B%A9%E5%99%A8" class="anchor" href="#%E9%80%89%E6%8B%A9%E5%99%A8"><span class="octicon octicon-link"></span></a>选择器</h2>
 
 <p>务必保持选择器简短高效。</p>
 
@@ -571,7 +571,7 @@ styles]
 <p><strong>牢记：</strong> class 无所谓是否语义化；应当关注它们是否合理。不要强调 class 名要符合语义，而要注重使用合理且不会过时的名称。</p>
 
 <h3>
-<a name="-17" class="anchor" href="#-17"><span class="octicon octicon-link"></span></a>过度修饰的选择器</h3>
+<a name="%E8%BF%87%E5%BA%A6%E4%BF%AE%E9%A5%B0%E7%9A%84%E9%80%89%E6%8B%A9%E5%99%A8" class="anchor" href="#%E8%BF%87%E5%BA%A6%E4%BF%AE%E9%A5%B0%E7%9A%84%E9%80%89%E6%8B%A9%E5%99%A8"><span class="octicon octicon-link"></span></a>过度修饰的选择器</h3>
 
 <p>由前文所述，过度修饰的选择器并不理想。</p>
 
@@ -580,14 +580,14 @@ styles]
 <p>再举一个修饰过度的选择器例子，<code>ul.nav li a{}</code>。如前文所说，我们马上就可以删掉 <code>ul</code> 因为我们知道 <code>.nav</code> 是个列表，然后我们就可以发现 <code>a</code> 一定在 <code>li</code> 中，所以我们就能将这个选择器改写成 <code>.nav a{}</code>。</p>
 
 <h3>
-<a name="-18" class="anchor" href="#-18"><span class="octicon octicon-link"></span></a>选择器性能</h3>
+<a name="%E9%80%89%E6%8B%A9%E5%99%A8%E6%80%A7%E8%83%BD" class="anchor" href="#%E9%80%89%E6%8B%A9%E5%99%A8%E6%80%A7%E8%83%BD"><span class="octicon octicon-link"></span></a>选择器性能</h3>
 
 <p>虽然浏览器性能日渐提升，渲染 CSS 速度越来越快，但是你还是应当关注效率。使用间断、没有嵌套的选择器，不把全局选择器（<code>*{}</code>）用作核心选择器，避免使用日渐复杂的 CSS3 新选择器可以避免这样的问题。</p>
 
 <p>译注，核心选择器：浏览器解析选择器为从右向左的顺序，最右端的元素是样式生效的元素，是为核心选择器。</p>
 
 <h2>
-<a name="-css--1" class="anchor" href="#-css--1"><span class="octicon octicon-link"></span></a>使用 CSS 选择器的目的</h2>
+<a name="%E4%BD%BF%E7%94%A8-css-%E9%80%89%E6%8B%A9%E5%99%A8%E7%9A%84%E7%9B%AE%E7%9A%84" class="anchor" href="#%E4%BD%BF%E7%94%A8-css-%E9%80%89%E6%8B%A9%E5%99%A8%E7%9A%84%E7%9B%AE%E7%9A%84"><span class="octicon octicon-link"></span></a>使用 CSS 选择器的目的</h2>
 
 <p>比起努力运用选择器定位到某元素，更好的办法是直接给你想要添加样式的元素直接添加一个 class。我们以 <code>.header ul{}</code> 这样一个选择器为例。</p>
 
@@ -610,7 +610,7 @@ styles]
 <p>避免主动使用 <code>!important</code>。例如 CSS 写得很复杂时不要用它来取巧，要好好整理并重构之前的部分，保持选择器简短并且避免用 ID 将效果拔群。</p>
 
 <h2>
-<a name="-19" class="anchor" href="#-19"><span class="octicon octicon-link"></span></a>魔数与绝对定位</h2>
+<a name="%E9%AD%94%E6%95%B0%E4%B8%8E%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D" class="anchor" href="#%E9%AD%94%E6%95%B0%E4%B8%8E%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D"><span class="octicon octicon-link"></span></a>魔数与绝对定位</h2>
 
 <p>魔数（Magic Number）是指那些「凑巧有效果」的数字，这东西非常不好，因为它们只是治标不治本而且缺乏拓展性。</p>
 
@@ -623,7 +623,7 @@ styles]
 <p>你在 CSS 中留下的每一个数字，都是你许下而不愿遵守的承诺。</p>
 
 <h2>
-<a name="-20" class="anchor" href="#-20"><span class="octicon octicon-link"></span></a>条件判断</h2>
+<a name="%E6%9D%A1%E4%BB%B6%E5%88%A4%E6%96%AD" class="anchor" href="#%E6%9D%A1%E4%BB%B6%E5%88%A4%E6%96%AD"><span class="octicon octicon-link"></span></a>条件判断</h2>
 
 <p>专门为 IE 写的样式基本上都是可以避免的，唯一需要为 IE 专门处理的是为了处理 IE 不支持的内容（例如 PNG）。</p>
 
@@ -639,7 +639,7 @@ styles]
 <p>有时候写上一个 <code>overflow:hidden</code> 或者其它能把问题藏起来的代码的确效果立竿见影，但是 overflow 方面可能根本就没问题。所以 <strong>要治本，而不是单纯治标</strong>。</p>
 
 <h2>
-<a name="-21" class="anchor" href="#-21"><span class="octicon octicon-link"></span></a>预处理器</h2>
+<a name="%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8" class="anchor" href="#%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8"><span class="octicon octicon-link"></span></a>预处理器</h2>
 
 <p>我用 Sass。使用时应当 <strong>灵活运用</strong> 。用 Sass 可以令你的 CSS 更强大，但是不要嵌套得太复杂。在 Vanilla CSS 中，只在必要的地方用嵌套即可，例如：</p>
 
